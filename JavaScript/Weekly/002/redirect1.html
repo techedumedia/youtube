@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	
+<html lang="en">
+
+<head>
+	<title>JavaScript: Redirecting to Another URL</title>
+	<meta charset="UTF-8">
+	
+	<!--
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+	-->
+	
+	<script>
+		let destination_url = "redirect2.html";
+		
+		// Take your pick at how you want to redirect and uncomment
+		
+		 window.location.replace(destination_url);
+		// window.location = destination_url;
+		// window.location.href = destination_url;
+		
+		// If you want to try this with JQuery, you will also have to
+		// uncomment the script tag above.
+		//$(location).prop("href", destination_url);
+	</script>
+</head>
+
+<body>
+	<p>This is redirect1.html</p>
+</body>
+
+</html>

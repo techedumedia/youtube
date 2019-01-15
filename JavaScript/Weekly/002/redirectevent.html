@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	
+<html lang="en">
+
+<head>
+	<title>JavaScript: Redirecting User to a New Page</title>
+	<meta charset="UTF-8">
+	
+	<script>
+		
+		function sleep(ms){
+			return new Promise(resolve => setTimeout(resolve, ms));
+		}
+		
+		async function Redirect (){
+			await sleep(5000);
+			let destination_url = "https://techedumedia.com/";
+			window.location.replace(destination_url);
+		}
+		
+		window.onload = Redirect;
+		
+	</script>
+</head>
+
+<body>
+	<h1>The web page you are looking is not here</h1>
+	<h1>... Redirecting to the new location in 5 seconds.</h1>
+	<h1>Please update your bookmarks when the new page loads</h1>
+</body>
+
+</html>
