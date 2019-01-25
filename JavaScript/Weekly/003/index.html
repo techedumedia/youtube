@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	
+<html lang="en">
+	
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	
+<script>
+	
+	//Current Timestamp in milliseconds
+	let js_timestamp = Date.now();     
+	console.log("JavaScript Timestamp: " + js_timestamp);
+	
+	//Timestamp in seconds
+	let unix_timestamp = Math.floor(js_timestamp / 1000); 
+	console.log("UNIX Timestamp: " + unix_timestamp);
+	
+	//Convert a UNIX timestamp to JavaScript timestamp
+	unix_timestamp = 1547915537;
+	let date = new Date(unix_timestamp * 1000);
+	console.log("Date: " + date.toLocaleString());
+	
+	//Display human readable UTC date string
+	console.log(date.toUTCString());
+	
+	//Getting each component of a UTC date.  There is also an equivalent
+	//method to set the value of each component of the date.  Just replace
+	//the "get" with "set" in the method name.
+	console.log(date.getUTCFullYear());	//4 digit year
+	console.log(date.getUTCMonth());	//0 to 11 months
+	console.log(date.getUTCDay());  	//0 = Sunday, 1 = Monday, ... 6 = Saturday
+	console.log(date.getUTCDate()); 	//1 to 31 Days of the Month
+	console.log(date.getUTCHours());	//0 to 23 hours
+	console.log(date.getUTCMinutes());	//0 to 59 minutes
+	console.log(date.getUTCSeconds());	//0 to 59 seconds
+	console.log(date.getUTCMilliseconds()); //0 to 999 milliseconds
+	
+	
+	let date1 = new Date(Date.UTC(2012, 4, 17, 5, 20, 10, 456));
+	console.log(date1);
+	
+</script>
+	
+</body>
+
+</html>
